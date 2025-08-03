@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #F8F6F3;
+}
+:root.dark {
+  background-color: #2E2E2E;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@font-face {
+    font-family: 'supreme';
+    src: url('../src/assets/fonts/Supreme-Variable.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@keyframes animation-splashscreen{
+  0%{
+    backdrop-filter: blur(0);
+  }
+  10%{
+    backdrop-filter: blur(10px);
+  }
+  20%{
+    backdrop-filter: blur(0);
+  }
+  40%{
+    transform: scale(1);
+  }
+  60%{
+    transform: scale(1.5);
+  }
+  80%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(100);
+  }
+}
+
+.SplashScreen {
+  animation: animation-splashscreen 2s forwards;
+}
