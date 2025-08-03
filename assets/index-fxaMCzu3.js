@@ -743,17 +743,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         bg-black/75 dark:bg-white/75\r
                         top-3 absolute left-3 z-[-2]\r
                         rounded-full\r
-                    `})]}),V.jsx("button",{className:`\r
-                    text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title\r
-                    hover:bg-black dark:hover:bg-white\r
-                    px-4 py-1 hover:scale-110\r
-                    border-2 border-black dark:border-white rounded-lg hover:border-blue hover:dark:border-blue\r
-                    transition-all duration-300\r
-                `,children:"Resume"})]}),V.jsxs("ul",{className:`\r
-\r
+                    `})]}),V.jsx("a",{href:"https://drive.google.com/file/d/1msYNDHtnx4pKUCis_nusMm_0XFPTowtb/view?usp=sharing",target:"_blank",rel:"noopener noreferrer",className:`\r
+                        text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title\r
+                        hover:bg-black dark:hover:bg-white\r
+                        px-4 py-1 hover:scale-110\r
+                        border-2 border-black dark:border-white rounded-lg hover:border-blue hover:dark:border-blue\r
+                        transition-all duration-300 inline-block text-center\r
+                    `,children:"Resume"})]}),V.jsxs("ul",{className:`\r
                 flex flex-row justify-evenly gap-5 \r
                 ml-5 md:mr-10 px-4 py-2\r
-            `,children:[V.jsx("li",{children:V.jsx(Fl,{icon:v3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})}),V.jsx("li",{children:V.jsx(Fl,{icon:h3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})}),V.jsx("li",{children:V.jsx(Fl,{icon:u3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})]})]})}function g3(){return V.jsx(V.Fragment,{children:V.jsx("div",{className:`\r
+            `,children:[V.jsx("li",{children:V.jsx("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",children:V.jsx(Fl,{icon:v3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),V.jsx("li",{children:V.jsx("a",{href:"https://github.com/MarcosBernalOficial",target:"_blank",rel:"noopener noreferrer",children:V.jsx(Fl,{icon:h3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),V.jsx("li",{children:V.jsx("a",{href:"mailto:marcos.bernal.oficial.1@gmail.com",children:V.jsx(Fl,{icon:u3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})})]})]})}function g3(){return V.jsx(V.Fragment,{children:V.jsx("div",{className:`\r
             md:h-[10dvh] min-h-[90px] min-w-screen\r
             overflow-x-hidden\r
             flex flex-col md:flex-row justify-between items-center\r
