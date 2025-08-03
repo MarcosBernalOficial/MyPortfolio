@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 
 export default function AppRoutes() {
     return (
-        <Router basename="/Portfolio">
+        <Router basename="/MyPortfolio">
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>
