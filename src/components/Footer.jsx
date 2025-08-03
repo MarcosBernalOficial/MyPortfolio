@@ -55,30 +55,58 @@ export default function Footer() {
                         rounded-full
                     "></div>
                 </button>
-                <button className="
-                    text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title
-                    hover:bg-black dark:hover:bg-white
-                    px-4 py-1 hover:scale-110
-                    border-2 border-black dark:border-white rounded-lg hover:border-blue hover:dark:border-blue
-                    transition-all duration-300
-                ">
+                <a
+                    href="https://drive.google.com/file/d/1msYNDHtnx4pKUCis_nusMm_0XFPTowtb/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                        text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title
+                        hover:bg-black dark:hover:bg-white
+                        px-4 py-1 hover:scale-110
+                        border-2 border-black dark:border-white rounded-lg hover:border-blue hover:dark:border-blue
+                        transition-all duration-300 inline-block text-center
+                    ">
                     Resume
-                </button>
+                </a>
             </div>
 
             <ul className="
-
                 flex flex-row justify-evenly gap-5 
                 ml-5 md:mr-10 px-4 py-2
             ">
                 <li>
-                    <FontAwesomeIcon icon={faLinkedin} className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300" />
-                </li>
-                <li>
-                    <FontAwesomeIcon icon={faGithub} className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300" />
-                </li>
-                <li>
-                    <FontAwesomeIcon icon={faEnvelope} className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300" />
+                    <a
+                        href="https://www.linkedin.com/in/marcos-bernal-b13a20355"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"
+                        />
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        href="https://github.com/MarcosBernalOficial"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon
+                        icon={faGithub}
+                        className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"
+                        />
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        href="mailto:marcos.bernal.oficial.1@gmail.com"
+                    >
+                        <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"
+                        />
+                    </a>
                 </li>
             </ul>
         </div>
