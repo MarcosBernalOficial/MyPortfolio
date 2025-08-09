@@ -1,14 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
-import woodcliffLight from "../assets/images/woodcliff-white.png";
 import woodcliffDark from "../assets/images/woodcliff-black.png";
-import squieroLight from "../assets/images/squiero-white.png";
 import squieroDark from "../assets/images/squiero-black.png";
-import lagaviotaLight from "../assets/images/lagaviota-white.png";
-import lagaviotaDark from "../assets/images/lagaviota-black.png"; 
+import lagaviotaDark from "../assets/images/lagaviota-black.png";
+import WorkInProgress from "./WorkInProgress"; 
 
 export default function Dashboard() {
+    const [showWorkInProgress, setShowWorkInProgress] = useState(false);
+    const [currentProject, setCurrentProject] = useState("");
+
+    const handleProjectClick = (projectName) => {
+        setCurrentProject(projectName);
+        setShowWorkInProgress(true);
+    };
+
+    const handleCloseWorkInProgress = () => {
+        setShowWorkInProgress(false);
+        setCurrentProject("");
+    };
 
     const data = [
         {
@@ -46,28 +57,25 @@ export default function Dashboard() {
 
     const proyects = [
         {
+            title: "La Gaviota",
+            subtitle: "landing-page - restaurant - 2025",
+            tools: ["Html", "Css", "Tailwind", "JavaScript", "React"],
+            linkUrl: "https://la-gaviota.vercel.app",
+            image: lagaviotaDark,
+        },
+        {
             title: "SQuiero",
             subtitle: "e-commerce - full-stack - bags - 2025",
             tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma", "Photoshop"],
             linkUrl: "",
-            imageLight: squieroLight,
-            imageDark: squieroDark,
+            image: squieroDark,
         },
         {
             title: "Woodcliff",
             subtitle: "e-commerce - full-stack - wood - 2025",
             tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma"],
             linkUrl: "",
-            imageLight: woodcliffLight,
-            imageDark: woodcliffDark,
-        },
-        {
-            title: "La Gaviota",
-            subtitle: "landing-page - restaurant - 2025",
-            tools: ["Html", "Css", "Tailwind", "JavaScript", "React"],
-            linkUrl: "",
-            imageLight: lagaviotaLight,
-            imageDark: lagaviotaDark,
+            image: woodcliffDark,
         },
     ];
 
@@ -209,37 +217,47 @@ export default function Dashboard() {
                         ">{tool}</li>
                     ))}
                     </ul>
-                    <a
-                    href={proyect.linkUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                        text-black dark:text-white hover:text-blue dark:hover:text-blue 
-                        transition-all duration-300
-                        pl-5
-                        absolute bottom-0 left-0 z-10
-                        hover:scale-110 
-                    ">
-                        <FontAwesomeIcon className="my-4 size-6" icon={faArrowUpRightFromSquare} />
-                    </a>
+                    {proyect.linkUrl ? (
+                        <a
+                            href={proyect.linkUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                text-black dark:text-white hover:text-blue dark:hover:text-blue 
+                                transition-all duration-300
+                                pl-5
+                                absolute bottom-0 left-0 z-10
+                                hover:scale-110 
+                                cursor-pointer
+                            "
+                        >
+                            <FontAwesomeIcon className="my-4 size-6" icon={faArrowUpRightFromSquare} />
+                        </a>
+                    ) : (
+                        <button
+                            onClick={() => handleProjectClick(proyect.title)}
+                            className="
+                                text-black dark:text-white hover:text-blue dark:hover:text-blue 
+                                transition-all duration-300
+                                pl-5
+                                absolute bottom-0 left-0 z-10
+                                hover:scale-110 
+                                cursor-pointer
+                            "
+                        >
+                            <FontAwesomeIcon className="my-4 size-6" icon={faArrowUpRightFromSquare} />
+                        </button>
+                    )}
                     <img 
-                        src={proyect.imageLight} 
-                        alt={`${proyect.title} light`} 
+                        src={proyect.image} 
+                        alt={`${proyect.title}`} 
                         className="
-                            md:w-[40%] w-full md:h-full h-full
+                            w-full h-full
+                            md:w-auto md:h-full
                             md:top-0 md:right-0 md:absolute
                             flex 
-                            md:block md:dark:hidden md:object-contain 
-                            md:border-l md:border-black/20
-                        "/>
-                    <img 
-                        src={proyect.imageDark} 
-                        alt={`${proyect.title} dark`} 
-                        className="
-                            md:max-w-[40%] w-full md:h-full
-                            md:absolute md:top-0 md:right-0
-                            hidden dark:block object-contain
-                            md:border-l md:border-white/20
+                            md:block md:object-contain 
+                            md:border-l md:border-black/20 dark:border-white/20
                         "/>
                 </div>
             ))}
@@ -256,6 +274,18 @@ export default function Dashboard() {
                     You should work with me, I will make your life easier.
                 </h3>
             </div>
+
+            {showWorkInProgress && (
+                <div className="fixed inset-0 z-50">
+                    <div 
+                        className="absolute inset-0 bg-black bg-opacity-50"
+                        onClick={handleCloseWorkInProgress}
+                    ></div>
+                    <div className="relative z-10">
+                        <WorkInProgress onClose={handleCloseWorkInProgress} />
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
