@@ -64,18 +64,18 @@ export default function Dashboard() {
             image: lagaviotaDark,
         },
         {
-            title: "SQuiero",
-            subtitle: "e-commerce - full-stack - bags - 2025",
-            tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma", "Photoshop"],
-            linkUrl: "",
-            image: squieroDark,
-        },
-        {
             title: "Woodcliff",
             subtitle: "e-commerce - full-stack - wood - 2025",
             tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma"],
             linkUrl: "",
             image: woodcliffDark,
+        },
+        {
+            title: "SQuiero",
+            subtitle: "e-commerce - full-stack - bags - 2025",
+            tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma", "Photoshop"],
+            linkUrl: "",
+            image: squieroDark,
         },
     ];
 
@@ -179,7 +179,7 @@ export default function Dashboard() {
                 text-black dark:text-white
             "> 
                 <h3 className="
-                    text-center font-semibold text-4xl text-blue font-title
+                    text-center font-semibold text-5xl text-blue font-title
                     my-4
                 ">
                     Proyects
@@ -190,7 +190,7 @@ export default function Dashboard() {
                 className="
                     w-full
                     relative
-                    border border-black/20 dark:border-white/20
+                    md:border-l border-black/20 dark:border-white/20
                     md:h-[250px]
                 ">
                     <h5 className="
@@ -253,23 +253,48 @@ export default function Dashboard() {
                         alt={`${proyect.title}`} 
                         className="
                             w-full h-full
+                            mt-4 md:mt-0
                             md:w-auto md:h-full
                             md:top-0 md:right-0 md:absolute
                             flex 
                             md:block md:object-contain 
-                            md:border-l md:border-black/20 dark:border-white/20
+                            
                         "/>
                 </div>
             ))}
             </div>
 
             <div className="
-                flex flex-1 w-full justify-center items-center
-                my-10
+                flex flex-col justify-center
+                w-full h-auto
+                md:border-l-8 md:border-blue
+                md:mt-14
+                text-black dark:text-white
             ">
                 <h3 className="
-                    font-title text-black dark:text-white text-5xl
-                    text-center
+                    text-center md:text-start font-semibold text-5xl k font-title
+                    text-blue
+                    mt-5
+                    px-5
+                ">
+                    Nowadays
+                </h3>
+                <p className="
+                    text-xl text-center md:text-start
+                    p-5 text-balance
+                ">
+                    I am currently enhancing my skills in JavaScript and React, deepening my knowledge to build modern and dynamic web applications. At the same time, I am learning Astro to create fast, optimized static websites, exploring MCP (Model Context Protocol) for advanced integrations, and studying AI agents to develop intelligent, automated, and interactive solutions.
+                </p>
+            </div>
+
+            <div className="
+                flex flex-1 md:justify-start justify-center items-center
+                w-full
+                my-10 md:p-7
+            ">
+                <h3 className="
+                    font-title text-blue text-5xl
+                    text-center text-balance 
                 ">
                     You should work with me, I will make your life easier.
                 </h3>

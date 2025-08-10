@@ -7,35 +7,36 @@ export default function WorkInProgress({ onClose }) {
             text-black dark:text-white
         ">
             <div className="
+            absolute
+            w-full h-full
+            bg-gradient-to-tr from-[#9a9cff] via-[#c4e6fa] to-[#c8c2fb]
+            "></div>
+            <div className="
                 text-center
-                px-4
+                p-20
+                bg-white/20 
+                backdrop-blur-md
+                border border-black/10
+                rounded-xl
             ">
                 <h1 className="
                     text-4xl md:text-6xl
                     font-bold
-                    mb-4
-                    text-black dark:text-white
-                ">
-                    Work in Progress
-                </h1>
-                <p className="
-                    text-lg md:text-xl
-                    text-blue
-                    font-medium
                     mb-8
+                    text-black 
                 ">
-                    Estamos trabajando en algo increíble
-                </p>
+                    Work in Progress...
+                </h1>
                 <button
                     onClick={onClose}
                     className="
-                        text-blue hover:text-blue-700 dark:hover:text-blue-300
+                        text-black hover:text-blue-700 
                         transition-colors duration-200
                         text-lg font-medium
-                        border-2 border-blue hover:border-blue-700 dark:hover:border-blue-300
+                        border-2 border-black hover:border-blue-700 
                         px-6 py-2
                         rounded-lg
-                        hover:bg-blue hover:text-white dark:hover:bg-blue-900
+                        hover:bg-black hover:text-white
                     "
                 >
                     Back
