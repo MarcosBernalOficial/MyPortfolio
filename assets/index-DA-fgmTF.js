@@ -633,6 +633,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             `}),q.jsxs("div",{className:`\r
                 text-center\r
                 p-20\r
+                max-w-[90dvw]\r
                 bg-white/20 \r
                 backdrop-blur-md\r
                 border border-black/10\r
@@ -720,14 +721,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             rounded-lg \r
 \r
                         `,children:O},M))]}),h.linkUrl?q.jsx("a",{href:h.linkUrl,target:"_blank",rel:"noopener noreferrer",className:`\r
-                                text-black dark:text-white hover:text-blue dark:hover:text-blue \r
+                                text-white hover:text-blue dark:hover:text-blue \r
                                 transition-all duration-300\r
                                 pl-5\r
                                 absolute bottom-0 left-0 z-10\r
                                 hover:scale-110 \r
                                 cursor-pointer\r
                             `,children:q.jsx(ul,{className:"my-4 size-6",icon:lv})}):q.jsx("button",{onClick:()=>o(h.title),className:`\r
-                                text-black dark:text-white hover:text-blue dark:hover:text-blue \r
+                                text-white hover:text-blue dark:hover:text-blue \r
                                 transition-all duration-300\r
                                 pl-5\r
                                 absolute bottom-0 left-0 z-10\r
