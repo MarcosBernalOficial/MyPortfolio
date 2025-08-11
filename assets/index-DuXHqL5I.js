@@ -800,7 +800,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         transition-all duration-300 inline-block text-center\r
                     `,children:"Resume"})]}),q.jsxs("ul",{className:`\r
                 flex flex-row justify-evenly gap-5 \r
-                ml-5 md:mr-10 px-4 py-2\r
+                mx-5 md:mr-10 px-4 py-2\r
             `,children:[q.jsx("li",{children:q.jsx("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",children:q.jsx(ul,{icon:m3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),q.jsx("li",{children:q.jsx("a",{href:"https://github.com/MarcosBernalOficial",target:"_blank",rel:"noopener noreferrer",children:q.jsx(ul,{icon:d3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),q.jsx("li",{children:q.jsx("a",{href:"mailto:marcos.bernal.oficial.1@gmail.com",children:q.jsx(ul,{icon:i3,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})})]})]})}function v3(){return q.jsx(q.Fragment,{children:q.jsx("div",{className:`\r
             md:h-[10dvh] min-h-[90px] min-w-screen\r
             overflow-x-hidden\r
