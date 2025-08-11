@@ -72,7 +72,7 @@ export default function Footer() {
 
             <ul className="
                 flex flex-row justify-evenly gap-5 
-                ml-5 md:mr-10 px-4 py-2
+                mx-5 md:mr-10 px-4 py-2
             ">
                 <li>
                     <a
