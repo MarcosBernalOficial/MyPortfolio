@@ -702,7 +702,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 `,children:"Proyects"}),y.map((h,x)=>q.jsxs("div",{className:`\r
                     w-full\r
                     relative\r
-                    md:border-l border-black/20 dark:border-white/20\r
+                    md:border-l border-t border-black/20 dark:border-white/20\r
                     md:h-[250px]\r
                 `,children:[q.jsx("h5",{className:`\r
                         font-semibold text-2xl text-center md:text-start font-title\r
@@ -749,19 +749,19 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 md:mt-14\r
                 text-black dark:text-white\r
             `,children:[q.jsx("h3",{className:`\r
-                    text-center md:text-start font-semibold text-5xl k font-title\r
+                    text-center md:text-start font-semibold md:text-5xl text-3xl font-title\r
                     text-blue\r
                     mt-5\r
                     px-5\r
                 `,children:"Nowadays"}),q.jsx("p",{className:`\r
-                    text-xl text-center md:text-start\r
+                    md:text-xl text-md text-center md:text-start\r
                     p-5 text-balance\r
                 `,children:"I am currently enhancing my skills in JavaScript and React, deepening my knowledge to build modern and dynamic web applications. At the same time, I am learning Astro to create fast, optimized static websites, exploring MCP (Model Context Protocol) for advanced integrations, and studying AI agents to develop intelligent, automated, and interactive solutions."})]}),q.jsx("div",{className:`\r
                 flex flex-1 md:justify-start justify-center items-center\r
                 w-full\r
                 my-10 md:p-7\r
             `,children:q.jsx("h3",{className:`\r
-                    font-title text-blue text-5xl\r
+                    font-title text-blue md:text-5xl text-2xl\r
                     text-center text-balance \r
                 `,children:"You should work with me, I will make your life easier."})}),n&&q.jsxs("div",{className:"fixed inset-0 z-50",children:[q.jsx("div",{className:"absolute inset-0 bg-black bg-opacity-50",onClick:d}),q.jsx("div",{className:"relative z-10",children:q.jsx(o3,{onClose:d})})]})]})}/*!
  * Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com
