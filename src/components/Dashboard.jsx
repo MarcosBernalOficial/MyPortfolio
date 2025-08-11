@@ -190,7 +190,7 @@ export default function Dashboard() {
                 className="
                     w-full
                     relative
-                    md:border-l border-black/20 dark:border-white/20
+                    md:border-l border-t border-black/20 dark:border-white/20
                     md:h-[250px]
                 ">
                     <h5 className="
@@ -272,7 +272,7 @@ export default function Dashboard() {
                 text-black dark:text-white
             ">
                 <h3 className="
-                    text-center md:text-start font-semibold text-5xl k font-title
+                    text-center md:text-start font-semibold md:text-5xl text-3xl font-title
                     text-blue
                     mt-5
                     px-5
@@ -280,7 +280,7 @@ export default function Dashboard() {
                     Nowadays
                 </h3>
                 <p className="
-                    text-xl text-center md:text-start
+                    md:text-xl text-md text-center md:text-start
                     p-5 text-balance
                 ">
                     I am currently enhancing my skills in JavaScript and React, deepening my knowledge to build modern and dynamic web applications. At the same time, I am learning Astro to create fast, optimized static websites, exploring MCP (Model Context Protocol) for advanced integrations, and studying AI agents to develop intelligent, automated, and interactive solutions.
@@ -293,7 +293,7 @@ export default function Dashboard() {
                 my-10 md:p-7
             ">
                 <h3 className="
-                    font-title text-blue text-5xl
+                    font-title text-blue md:text-5xl text-2xl
                     text-center text-balance 
                 ">
                     You should work with me, I will make your life easier.
