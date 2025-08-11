@@ -223,7 +223,7 @@ export default function Dashboard() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
-                                text-black dark:text-white hover:text-blue dark:hover:text-blue 
+                                text-white hover:text-blue dark:hover:text-blue 
                                 transition-all duration-300
                                 pl-5
                                 absolute bottom-0 left-0 z-10
@@ -237,7 +237,7 @@ export default function Dashboard() {
                         <button
                             onClick={() => handleProjectClick(proyect.title)}
                             className="
-                                text-black dark:text-white hover:text-blue dark:hover:text-blue 
+                                text-white hover:text-blue dark:hover:text-blue 
                                 transition-all duration-300
                                 pl-5
                                 absolute bottom-0 left-0 z-10

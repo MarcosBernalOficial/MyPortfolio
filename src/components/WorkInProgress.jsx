@@ -14,6 +14,7 @@ export default function WorkInProgress({ onClose }) {
             <div className="
                 text-center
                 p-20
+                max-w-[90dvw]
                 bg-white/20 
                 backdrop-blur-md
                 border border-black/10
