@@ -23,14 +23,15 @@ export default function Footer() {
     return (
         <div className="
             fixed bottom-0 w-full z-30
-            py-5 px-10
+            py-5 md:px-10
             bg-white/10 dark:bg-black/10
             backdrop-blur-md
             border-t border-black/10 dark:border-white/10
             flex flex-row justify-between items-center
         ">
             <div className="
-                flex flex-row justify-evenly items-center gap-5 
+                flex flex-row justify-start md:justify-evenly items-center gap-5 
+                px-5
                 md:mr-10 md:px-4 py-2
             ">
                 <button 
@@ -72,7 +73,7 @@ export default function Footer() {
 
             <ul className="
                 flex flex-row justify-evenly gap-5 
-                mx-5 md:mr-10 px-4 py-2
+                mr-5 md:mr-10  py-2
             ">
                 <li>
                     <a
