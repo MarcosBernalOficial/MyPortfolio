@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 import { useState } from "react";
 
 import woodcliffDark from "../assets/images/woodcliff-black.png";
@@ -60,7 +59,7 @@ export default function Dashboard() {
             title: "La Gaviota",
             subtitle: "landing-page - restaurant - 2025",
             tools: ["Html", "Css", "Tailwind", "JavaScript", "React"],
-            linkUrl: "https://la-gaviota.vercel.app",
+            linkUrl: "https://lagaviotamdp.com",
             image: lagaviotaDark,
         },
         {
@@ -85,6 +84,7 @@ export default function Dashboard() {
         flex flex-col justify-between items-start
         text-black dark:text-white
         px-5 lg:px-0
+        cursor-default
         ">
 
             <div className="
@@ -118,13 +118,13 @@ export default function Dashboard() {
                         max-w-md py-5 px-3
                 ">
                     <h3 className="
-                        font-semibold text-2xl text-blue text-center md:text-start font-title
+                        font-semibold text-2xl text-blue text-center md:text-center font-title
                         pb-2 
                     ">
                         {item.title}
                     </h3>
                     <p className="
-                        text-md font-medium max-w-[20rem] text-center md:text-start
+                        text-md font-medium max-w-[20rem] text-center md:text-center text-balance
                     ">
                         {item.description}
                     </p>
@@ -185,14 +185,27 @@ export default function Dashboard() {
                     Proyects
                 </h3>
             {proyects.map((proyect, index) => (
-                <div 
-                key={index}
-                className="
-                    w-full
-                    relative
-                    md:border-l border-t border-black/20 dark:border-white/20
-                    md:h-[250px]
-                ">
+                <div
+                    key={index}
+                    onClick={() => {
+                        if (proyect.linkUrl) {
+                            window.open(proyect.linkUrl, "_blank", "noopener,noreferrer");
+                        } else {
+                            handleProjectClick(proyect.title);
+                        }
+                    }}
+                    className="
+                        w-full
+                        relative
+                        md:border-l border-black/20 dark:border-white/20
+                        md:h-[250px]
+                        cursor-pointer
+                        transition-all duration-300 hover:scale-[1.01] hover:border-l hover:border-blue dark:hover:border-blue
+                    "
+                    tabIndex={0}
+                    role="button"
+                    aria-label={proyect.title}
+                >
                     <h5 className="
                         font-semibold text-2xl text-center md:text-start font-title
                         pt-5 pl-5
@@ -205,52 +218,21 @@ export default function Dashboard() {
                         flex flex-row gap-5 flex-wrap items-center justify-center md:justify-start 
                         md:max-w-[60%] w-full px-5
                     "> {proyect.tools.map((tool, i) => (
-                        <li 
-                        key={i}
-                        className="
-                            font-medium text-md
-                            text-black dark:text-white
-                            border border-black/20 dark:border-white/20
-                            py-1 px-3
-                            rounded-lg 
-
-                        ">{tool}</li>
+                        <li
+                            key={i}
+                            className="
+                                font-medium text-md
+                                text-black dark:text-white
+                                border border-black/20 dark:border-white/20
+                                py-1 px-3
+                                rounded-lg 
+                            "
+                        >{tool}</li>
                     ))}
                     </ul>
-                    {proyect.linkUrl ? (
-                        <a
-                            href={proyect.linkUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                                text-white hover:text-blue dark:hover:text-blue 
-                                transition-all duration-300
-                                pl-5
-                                absolute bottom-0 left-0 z-10
-                                hover:scale-110 
-                                cursor-pointer
-                            "
-                        >
-                            <FontAwesomeIcon className="my-4 size-6" icon={faArrowUpRightFromSquare} />
-                        </a>
-                    ) : (
-                        <button
-                            onClick={() => handleProjectClick(proyect.title)}
-                            className="
-                                text-white hover:text-blue dark:hover:text-blue 
-                                transition-all duration-300
-                                pl-5
-                                absolute bottom-0 left-0 z-10
-                                hover:scale-110 
-                                cursor-pointer
-                            "
-                        >
-                            <FontAwesomeIcon className="my-4 size-6" icon={faArrowUpRightFromSquare} />
-                        </button>
-                    )}
-                    <img 
-                        src={proyect.image} 
-                        alt={`${proyect.title}`} 
+                    <img
+                        src={proyect.image}
+                        alt={`${proyect.title}`}
                         className="
                             w-full h-full
                             mt-4 md:mt-0
@@ -258,8 +240,8 @@ export default function Dashboard() {
                             md:top-0 md:right-0 md:absolute
                             flex 
                             md:block md:object-contain 
-                            
-                        "/>
+                        "
+                    />
                 </div>
             ))}
             </div>
@@ -295,6 +277,7 @@ export default function Dashboard() {
                 <h3 className="
                     font-title text-blue md:text-5xl text-2xl
                     text-center text-balance 
+                    hover:scale-[1.01] transition-all duration-300
                 ">
                     You should work with me, I will make your life easier.
                 </h3>
