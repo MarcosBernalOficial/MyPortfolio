@@ -50,7 +50,7 @@ export default function Dashboard() {
         },
         {
             title: "Soft Skills",
-            items: ["Problem-solving", "Communication skills", "Teamwork & collaboration", "Adaptability", "Time management", "Critical thinking"],
+            items: ["Problem-solving", "Adaptability", "Teamwork & collaboration", "Communication skills", "Time management", "Critical thinking"],
         },
     ];
 
@@ -138,7 +138,8 @@ export default function Dashboard() {
             <div className="
                 flex flex-col justify-center items-center flex-wrap md:flex-nowrap gap-5
                 w-full 
-                border-x border-black/20 dark:border-white/20
+                border-x border-black/20 dark:border-white/20 
+                px-1 md:px-0
             "> {sections.map((section, index) => (
                 <div
                 key={index}
