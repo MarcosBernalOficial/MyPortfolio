@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import cvPDF from "../assets/pdf/CV_Marcos_Bernal_EN.docx.pdf";
 export default function Footer() {
 
     const [darkMode, setDarkMode] = useState(false);
@@ -57,9 +58,8 @@ export default function Footer() {
                     "></div>
                 </button>
                 <a
-                    href="https://drive.google.com/file/d/1msYNDHtnx4pKUCis_nusMm_0XFPTowtb/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={cvPDF}
+                    download="CV_Marcos_Bernal_EN.pdf"
                     className="
                         text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title
                         hover:bg-black dark:hover:bg-white
