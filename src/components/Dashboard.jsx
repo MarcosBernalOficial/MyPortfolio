@@ -1,9 +1,6 @@
 
 import { useState } from "react";
 
-import woodcliffDark from "../assets/images/woodcliff-black.png";
-import squieroDark from "../assets/images/squiero-black.png";
-import lagaviotaDark from "../assets/images/lagaviota-black.png";
 import WorkInProgress from "./WorkInProgress"; 
 
 export default function Dashboard() {
@@ -60,21 +57,14 @@ export default function Dashboard() {
             subtitle: "landing-page - restaurant - 2025",
             tools: ["Html", "Css", "Tailwind", "JavaScript", "React"],
             linkUrl: "https://lagaviotamdp.com",
-            image: lagaviotaDark,
+            description: "Responsive restaurant landing page with menu and information about La Gaviota. Built with React for optimal mobile experience and high performance.",
         },
         {
-            title: "Woodcliff",
-            subtitle: "e-commerce - full-stack - wood - 2025",
-            tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma"],
+            title: "BunchPay",
+            subtitle: "wallet online - 2025",
+            tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "Angular", "Figma"],
             linkUrl: "",
-            image: woodcliffDark,
-        },
-        {
-            title: "SQuiero",
-            subtitle: "e-commerce - full-stack - bags - 2025",
-            tools: ["PostgreSQL", "Java", "Spring", "Html", "Css", "Tailwind", "JavaScript", "React", "Figma", "Photoshop"],
-            linkUrl: "",
-            image: squieroDark,
+            description: "Digital wallet platform enabling secure payments, fund transfers, real-time balance tracking and other functions. Built with Angular, Java, Spring for seamless financial management.",
         },
     ];
 
@@ -102,7 +92,7 @@ export default function Dashboard() {
                     Full-Stack developer & UX/UI designer
                 </h3>
                 <p className="text-xl font-medium text-balance text-center md:text-start max-w-[30rem]">
-                    I'm from Argentina, passionate about creating clean, responsive, and user-friendly web experiences.
+                    Building scalable, user-centered web applications with modern technologies. Specialized in ReactJS, responsive design, and seamless user experiences.
                 </p>
             </div>
 
@@ -199,7 +189,7 @@ export default function Dashboard() {
                         w-full
                         relative
                         md:border-l border-black/20 dark:border-white/20
-                        md:h-[250px]
+                        md:max-h-[250px]
                         cursor-pointer
                         transition-all duration-300 hover:scale-[1.01] hover:border-l hover:border-blue dark:hover:border-blue
                     "
@@ -231,18 +221,14 @@ export default function Dashboard() {
                         >{tool}</li>
                     ))}
                     </ul>
-                    <img
-                        src={proyect.image}
-                        alt={`${proyect.title}`}
+                    <p
                         className="
-                            w-full h-full
-                            mt-4 md:mt-0
-                            md:w-auto md:h-full
-                            md:top-0 md:right-0 md:absolute
-                            flex 
-                            md:block md:object-contain 
+                        font-medium
+                        w-[100%] md:w-[70%]
+                        text-center md:text-start
+                        mt-2 ml-none md:mt-5 md:ml-5 hover:text-blue dark:hover:text-blue transition-all duration-300
                         "
-                    />
+                    >{proyect.description}</p>
                 </div>
             ))}
             </div>
@@ -276,11 +262,11 @@ export default function Dashboard() {
                 my-10 md:p-7
             ">
                 <h3 className="
-                    font-title text-blue md:text-5xl text-2xl
+                    font-title text-blue md:text-2xl text-lg
                     text-center text-balance 
                     hover:scale-[1.01] transition-all duration-300
                 ">
-                    You should work with me, I will make your life easier.
+                    Let's Build Something Great Together I'm currently open to frontend and full-stack development opportunities where I can contribute to building scalable, user-focused applications. If you're looking for a developer who combines technical expertise with design sensibility and a commitment to quality, let's connect.
                 </h3>
             </div>
 
