@@ -754,7 +754,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
  * Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2025 Fonticons, Inc.
- */var QS={prefix:"fas",iconName:"envelope",icon:[512,512,[128386,9993,61443],"f0e0","M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"]};function VS(){const[u,r]=D.useState(!1);D.useEffect(()=>{localStorage.getItem("theme")==="dark"&&(document.documentElement.classList.add("dark"),r(!0))},[]);const c=()=>{const f=document.documentElement.classList.toggle("dark");r(f),localStorage.setItem("theme",f?"dark":"light")};return G.jsxs("div",{className:`\r
+ */var QS={prefix:"fas",iconName:"envelope",icon:[512,512,[128386,9993,61443],"f0e0","M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"]};const VS="/MyPortfolio/assets/CV_Marcos_Bernal_EN.docx-hqyGE1ki.pdf";function ZS(){const[u,r]=D.useState(!1);D.useEffect(()=>{localStorage.getItem("theme")==="dark"&&(document.documentElement.classList.add("dark"),r(!0))},[]);const c=()=>{const f=document.documentElement.classList.toggle("dark");r(f),localStorage.setItem("theme",f?"dark":"light")};return G.jsxs("div",{className:`\r
             fixed bottom-0 w-full z-30\r
             py-5 md:px-10\r
             bg-white/10 dark:bg-black/10\r
@@ -781,7 +781,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                         bg-black/75 dark:bg-white/75\r
                         top-3 absolute left-3 z-[-2]\r
                         rounded-full\r
-                    `})]}),G.jsx("a",{href:"https://drive.google.com/file/d/1msYNDHtnx4pKUCis_nusMm_0XFPTowtb/view?usp=sharing",target:"_blank",rel:"noopener noreferrer",className:`\r
+                    `})]}),G.jsx("a",{href:VS,download:"CV_Marcos_Bernal_EN.pdf",className:`\r
                         text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title\r
                         hover:bg-black dark:hover:bg-white\r
                         px-4 py-1 hover:scale-110\r
@@ -790,7 +790,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                     `,children:"Resume"})]}),G.jsxs("ul",{className:`\r
                 flex flex-row justify-evenly gap-5 \r
                 mr-5 md:mr-10  py-2\r
-            `,children:[G.jsx("li",{children:G.jsx("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",children:G.jsx(ji,{icon:XS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),G.jsx("li",{children:G.jsx("a",{href:"https://github.com/MarcosBernalOficial",target:"_blank",rel:"noopener noreferrer",children:G.jsx(ji,{icon:GS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),G.jsx("li",{children:G.jsx("a",{href:"mailto:marcos.bernal.oficial.1@gmail.com",children:G.jsx(ji,{icon:QS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})})]})]})}function ZS(){return G.jsx(G.Fragment,{children:G.jsx("div",{className:`\r
+            `,children:[G.jsx("li",{children:G.jsx("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",children:G.jsx(ji,{icon:XS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),G.jsx("li",{children:G.jsx("a",{href:"https://github.com/MarcosBernalOficial",target:"_blank",rel:"noopener noreferrer",children:G.jsx(ji,{icon:GS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})}),G.jsx("li",{children:G.jsx("a",{href:"mailto:marcos.bernal.oficial.1@gmail.com",children:G.jsx(ji,{icon:QS,className:"text-black dark:text-white text-3xl hover:scale-110 hover:text-blue dark:hover:text-blue transition-all duration-300"})})})]})]})}function KS(){return G.jsx(G.Fragment,{children:G.jsx("div",{className:`\r
             md:h-[10dvh] min-h-[90px] min-w-screen\r
             overflow-x-hidden\r
             flex flex-col md:flex-row justify-between items-center\r
@@ -801,7 +801,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                     my-3 md:my-0\r
                     text-blue  font-bold text-5xl text-center md:text-start\r
                     cursor-default\r
-                `,children:"MyPortfolio."})})})}function KS(){return G.jsx("div",{className:`\r
+                `,children:"MyPortfolio."})})})}function JS(){return G.jsx("div",{className:`\r
             h-screen w-full relative z-40\r
             bg-white dark:bg-black\r
             flex justify-center items-center\r
@@ -810,4 +810,4 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                 rounded-full\r
                 bg-blue\r
                 SplashScreen\r
-            `})})}function JS(){const[u,r]=D.useState(!0);return D.useEffect(()=>{const c=setTimeout(()=>{r(!1)},2100);return()=>clearTimeout(c)},[]),u?G.jsx(KS,{}):G.jsxs("div",{className:"min-h-screen pb-20 min-w-screen bg-white dark:bg-black overflow-x-hidden",children:[G.jsx(ZS,{}),G.jsx(bp,{}),G.jsx(VS,{})]})}function $S(){return G.jsx(up,{basename:"/MyPortfolio",children:G.jsx(H1,{children:G.jsx(av,{path:"/",element:G.jsx(JS,{})})})})}function FS(){const[u,r]=D.useState(0);return G.jsx(G.Fragment,{children:G.jsx($S,{})})}function WS(){return D.useLayoutEffect(()=>{const u=localStorage.getItem("theme"),r=window.matchMedia("(prefers-color-scheme: dark)").matches;u==="dark"||!u&&r?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")},[]),G.jsx(FS,{})}Vg.createRoot(document.getElementById("root")).render(G.jsx(D.StrictMode,{children:G.jsx(WS,{})}));
+            `})})}function $S(){const[u,r]=D.useState(!0);return D.useEffect(()=>{const c=setTimeout(()=>{r(!1)},2100);return()=>clearTimeout(c)},[]),u?G.jsx(JS,{}):G.jsxs("div",{className:"min-h-screen pb-20 min-w-screen bg-white dark:bg-black overflow-x-hidden",children:[G.jsx(KS,{}),G.jsx(bp,{}),G.jsx(ZS,{})]})}function FS(){return G.jsx(up,{basename:"/MyPortfolio",children:G.jsx(H1,{children:G.jsx(av,{path:"/",element:G.jsx($S,{})})})})}function WS(){const[u,r]=D.useState(0);return G.jsx(G.Fragment,{children:G.jsx(FS,{})})}function PS(){return D.useLayoutEffect(()=>{const u=localStorage.getItem("theme"),r=window.matchMedia("(prefers-color-scheme: dark)").matches;u==="dark"||!u&&r?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")},[]),G.jsx(WS,{})}Vg.createRoot(document.getElementById("root")).render(G.jsx(D.StrictMode,{children:G.jsx(PS,{})}));
