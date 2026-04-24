@@ -4,6 +4,7 @@ import Dashboard from '../components/Dashboard';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import SplashScreen from '../components/SplashScreen';
+import { AuroraBackground } from '../components/ui/aurora-background';
 
 export default function Home(){
     const [isLoading, setIsLoading] = useState(true);
@@ -21,10 +22,10 @@ export default function Home(){
     }
 
     return (
-        <div className="min-h-screen pb-20 min-w-screen bg-white dark:bg-black overflow-x-hidden">
-            < Nav />
-            < Dashboard />
-            < Footer />
-        </div>
+        <AuroraBackground className="pb-20">
+            <Nav />
+            <Dashboard />
+            <Footer />
+        </AuroraBackground>
     )
 }
