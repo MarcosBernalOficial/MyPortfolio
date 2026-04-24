@@ -4,6 +4,14 @@
 
 :root {
   background-color: #F8F6F3;
+  --white: #F8F6F3;
+  --black: #2E2E2E;
+  --transparent: transparent;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --indigo-300: #a5b4fc;
+  --violet-200: #ddd6fe;
 }
 :root.dark {
   background-color: #2E2E2E;
