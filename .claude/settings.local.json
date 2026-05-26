@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\marco\\\\OneDrive\\\\Documents\\\\Programacion\\\\MyPortfolio\\\\MyPortfolio\" -Recurse -Filter \"*.js\" -Filter \"*.jsx\" -Filter \"*.ts\" -Filter \"*.tsx\")",
+      "Bash(Select-Object -First 30)"
+    ]
+  }
+}

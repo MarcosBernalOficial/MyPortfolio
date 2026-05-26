@@ -66,6 +66,20 @@ export default function Dashboard() {
             linkUrl: "",
             description: "Digital wallet platform enabling secure payments, fund transfers, real-time balance tracking and other functions. Built with Angular, Java, Spring for seamless financial management.",
         },
+        {
+            title: "SQuiero",
+            subtitle: "catalog - bags brand - 2025",
+            tools: ["TypeScript", "Next.js", "React", "Tailwind", "Prisma", "PostgreSQL"],
+            linkUrl: "https://squiero.vercel.app/",
+            description: "Online catalog for a bags brand showcasing their full product collection. Built with React and Tailwind for a clean, modern shopping experience.",
+        },
+        {
+            title: "WoodCliff",
+            subtitle: "catalog - carpentry products - 2025",
+            tools: ["TypeScript", "Next.js", "React", "Tailwind", "Prisma", "PostgreSQL"],
+            linkUrl: "https://woodcliff-eight.vercel.app/",
+            description: "Product catalog for a carpentry brand displaying their handcrafted furniture and woodwork pieces. Built with React for a smooth browsing experience.",
+        },
     ];
 
     return (
