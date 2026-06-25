@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import cvPDF from "../assets/pdf/CV_Marcos_Bernal_EN.docx.pdf";
+import cvPDF from "../assets/pdf/Marcos_Bernal_Resume.pdf";
 export default function Footer() {
 
     const [darkMode, setDarkMode] = useState(false);
