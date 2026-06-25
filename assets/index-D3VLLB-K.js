@@ -779,7 +779,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                         bg-black/75 dark:bg-white/75\r
                         top-3 absolute left-3 z-[-2]\r
                         rounded-full\r
-                    `})]}),X.jsx("a",{href:Rx,download:"CV_Marcos_Bernal_EN.pdf",className:`\r
+                    `})]}),X.jsx("a",{href:Rx,download:"Marcos_Bernal_Resume.pdf",className:`\r
                         text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title\r
                         hover:bg-black dark:hover:bg-white\r
                         px-4 py-1 hover:scale-110\r
