@@ -1,10 +1,12 @@
 
 import { useState } from "react";
 
-import WorkInProgress from "./WorkInProgress"; 
+import WorkInProgress from "./WorkInProgress";
+import RequestAccess from "./RequestAccess";
 
 export default function Dashboard() {
     const [showWorkInProgress, setShowWorkInProgress] = useState(false);
+    const [showRequestAccess, setShowRequestAccess] = useState(false);
     const [currentProject, setCurrentProject] = useState("");
 
     const handleProjectClick = (projectName) => {
@@ -12,8 +14,18 @@ export default function Dashboard() {
         setShowWorkInProgress(true);
     };
 
+    const handleRequestAccessClick = (projectName) => {
+        setCurrentProject(projectName);
+        setShowRequestAccess(true);
+    };
+
     const handleCloseWorkInProgress = () => {
         setShowWorkInProgress(false);
+        setCurrentProject("");
+    };
+
+    const handleCloseRequestAccess = () => {
+        setShowRequestAccess(false);
         setCurrentProject("");
     };
 
@@ -35,7 +47,7 @@ export default function Dashboard() {
     const sections = [
         {
             title: "Languages & Frameworks",
-            items: ["MySQL", "Java", "Spring", "HTML5", "CSS", "JavaScript", "React"],
+            items: ["MySQL", "Java", "Spring", "HTML5", "CSS", "JavaScript", "TypeScript", "React", "Node"],
         },
         {
             title: "Design Tools",
@@ -52,6 +64,20 @@ export default function Dashboard() {
     ];
 
     const proyects = [
+        {
+            title: "SkoolyClips",
+            subtitle: "desktop app - video review workflow - 2026",
+            tools: ["TypeScript", "Node.js", "Electron", "React", "Tailwind", "Vite", "ffmpeg"],
+            linkUrl: "https://skoolyclips.com",
+            description: "Desktop app for coaches to review student recordings, assign each clip to the correct student, and generate a single shareable link plus a ready-to-send WhatsApp message. It turns long recording sessions into a fast and organized delivery workflow.",
+        },
+        {
+            title: "Klin",
+            subtitle: "AI WhatsApp assistant for clinics - 2026",
+            tools: ["TypeScript", "Node.js", "Next.js", "React", "Tailwind", "Fastify", "Prisma", "PostgreSQL", "Redis", "OpenAI"],
+            linkUrl: "https://klin-ai.vercel.app/",
+            description: "Klin is an AI assistant that answers patients on WhatsApp 24/7 with the clinic's own policies and schedule, confirms appointments, handles deposits, and keeps the calendar organized. It automates the routine administrative conversations so the practice can focus on patient care.",
+        },
         {
             title: "La Gaviota",
             subtitle: "landing-page - restaurant - 2025",
@@ -193,7 +219,9 @@ export default function Dashboard() {
                 <div
                     key={index}
                     onClick={() => {
-                        if (proyect.linkUrl) {
+                        if (proyect.requiresContact) {
+                            handleRequestAccessClick(proyect.title);
+                        } else if (proyect.linkUrl) {
                             window.open(proyect.linkUrl, "_blank", "noopener,noreferrer");
                         } else {
                             handleProjectClick(proyect.title);
@@ -286,12 +314,24 @@ export default function Dashboard() {
 
             {showWorkInProgress && (
                 <div className="fixed inset-0 z-50">
-                    <div 
+                    <div
                         className="absolute inset-0 bg-black bg-opacity-50"
                         onClick={handleCloseWorkInProgress}
                     ></div>
                     <div className="relative z-10">
                         <WorkInProgress onClose={handleCloseWorkInProgress} />
+                    </div>
+                </div>
+            )}
+
+            {showRequestAccess && (
+                <div className="fixed inset-0 z-50">
+                    <div
+                        className="absolute inset-0 bg-black bg-opacity-50"
+                        onClick={handleCloseRequestAccess}
+                    ></div>
+                    <div className="relative z-10">
+                        <RequestAccess projectName={currentProject} onClose={handleCloseRequestAccess} />
                     </div>
                 </div>
             )}

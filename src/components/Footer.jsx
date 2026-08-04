@@ -59,7 +59,7 @@ export default function Footer() {
                 </button>
                 <a
                     href={cvPDF}
-                    download="CV_Marcos_Bernal_EN.pdf"
+                    download="Marcos_Bernal_Resume.pdf"
                     className="
                         text-xl font-semibold text-black dark:text-white hover:text-blue dark:hover:text-blue font-title
                         hover:bg-black dark:hover:bg-white
