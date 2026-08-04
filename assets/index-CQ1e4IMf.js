@@ -657,59 +657,59 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
 
 I'd like to try the ${n} system. Could you grant me access?
 
-Thanks!`),c=`mailto:marcos.bernal.oficial.1@gmail.com?subject=${s}&body=${u}`;return Y.jsxs("div",{className:`
-            min-h-screen
-            flex items-center justify-center
-            bg-white dark:bg-black
-            text-black dark:text-white
-        `,children:[Y.jsx("div",{className:`
-            absolute
-            w-full h-full
-            bg-gradient-to-tr from-[#9a9cff] via-[#c4e6fa] to-[#c8c2fb]
-            `}),Y.jsxs("div",{className:`
-                text-center
-                p-10 md:p-16
-                max-w-[90dvw] md:max-w-[40rem]
-                bg-white/20
-                backdrop-blur-md
-                border border-black/10
-                rounded-xl
-                text-black
-            `,children:[Y.jsx("h1",{className:`
-                    text-3xl md:text-5xl
-                    font-bold
-                    mb-4
-                `,children:n}),Y.jsx("p",{className:`
-                    text-lg md:text-xl
-                    font-medium
-                    mb-8 text-balance
-                `,children:"This is a fully functional system, not a mockup. To protect its data, the live demo isn't open to the public. If you'd like to try it, please get in touch and I'll give you access."}),Y.jsxs("div",{className:`
-                    flex flex-row justify-center items-center gap-4
-                    mb-8
-                `,children:[Y.jsxs("a",{href:c,className:`
-                            flex flex-row items-center gap-2
-                            text-lg font-medium
-                            border-2 border-black
-                            px-6 py-2
-                            rounded-lg
-                            transition-colors duration-200
-                            hover:bg-black hover:text-white
-                        `,children:[Y.jsx(dn,{icon:Bg}),"Email me"]}),Y.jsxs("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",className:`
-                            flex flex-row items-center gap-2
-                            text-lg font-medium
-                            border-2 border-black
-                            px-6 py-2
-                            rounded-lg
-                            transition-colors duration-200
-                            hover:bg-black hover:text-white
-                        `,children:[Y.jsx(dn,{icon:Hg}),"LinkedIn"]})]}),Y.jsx("button",{onClick:o,className:`
-                        text-black hover:text-blue-700
-                        transition-colors duration-200
-                        text-lg font-medium
-                        border-2 border-black hover:border-blue-700
-                        px-6 py-2
-                        rounded-lg
-                        hover:bg-black hover:text-white
+Thanks!`),c=`mailto:marcos.bernal.oficial.1@gmail.com?subject=${s}&body=${u}`;return Y.jsxs("div",{className:`\r
+            min-h-screen\r
+            flex items-center justify-center\r
+            bg-white dark:bg-black\r
+            text-black dark:text-white\r
+        `,children:[Y.jsx("div",{className:`\r
+            absolute\r
+            w-full h-full\r
+            bg-gradient-to-tr from-[#9a9cff] via-[#c4e6fa] to-[#c8c2fb]\r
+            `}),Y.jsxs("div",{className:`\r
+                text-center\r
+                p-10 md:p-16\r
+                max-w-[90dvw] md:max-w-[40rem]\r
+                bg-white/20\r
+                backdrop-blur-md\r
+                border border-black/10\r
+                rounded-xl\r
+                text-black\r
+            `,children:[Y.jsx("h1",{className:`\r
+                    text-3xl md:text-5xl\r
+                    font-bold\r
+                    mb-4\r
+                `,children:n}),Y.jsx("p",{className:`\r
+                    text-lg md:text-xl\r
+                    font-medium\r
+                    mb-8 text-balance\r
+                `,children:"This is a fully functional system, not a mockup. To protect its data, the live demo isn't open to the public. If you'd like to try it, please get in touch and I'll give you access."}),Y.jsxs("div",{className:`\r
+                    flex flex-row justify-center items-center gap-4\r
+                    mb-8\r
+                `,children:[Y.jsxs("a",{href:c,className:`\r
+                            flex flex-row items-center gap-2\r
+                            text-lg font-medium\r
+                            border-2 border-black\r
+                            px-6 py-2\r
+                            rounded-lg\r
+                            transition-colors duration-200\r
+                            hover:bg-black hover:text-white\r
+                        `,children:[Y.jsx(dn,{icon:Bg}),"Email me"]}),Y.jsxs("a",{href:"https://www.linkedin.com/in/marcos-bernal-b13a20355",target:"_blank",rel:"noopener noreferrer",className:`\r
+                            flex flex-row items-center gap-2\r
+                            text-lg font-medium\r
+                            border-2 border-black\r
+                            px-6 py-2\r
+                            rounded-lg\r
+                            transition-colors duration-200\r
+                            hover:bg-black hover:text-white\r
+                        `,children:[Y.jsx(dn,{icon:Hg}),"LinkedIn"]})]}),Y.jsx("button",{onClick:o,className:`\r
+                        text-black hover:text-blue-700\r
+                        transition-colors duration-200\r
+                        text-lg font-medium\r
+                        border-2 border-black hover:border-blue-700\r
+                        px-6 py-2\r
+                        rounded-lg\r
+                        hover:bg-black hover:text-white\r
                     `,children:"Back"})]})]})}function zS(){const[n,o]=k.useState(!1),[s,u]=k.useState(!1),[c,d]=k.useState(""),m=M=>{d(M),o(!0)},p=M=>{d(M),u(!0)},g=()=>{o(!1),d("")},v=()=>{u(!1),d("")},x=[{title:"Back-end",description:"I graduated from the National Technological University of Mar del Plata with a strong focus on back-end development, enabling me to build robust and fully integrated full-stack web applications."},{title:"Front-end",description:"I specialized in front-end development, gaining solid expertise in building responsive, interactive, and maintainable web interfaces with modern technologies and best coding practices."},{title:"Why",description:"As a programmer and front-end developer, I’m driven by the goal of making technology useful and approachable. I enjoy building clean, responsive, and accessible interfaces that help people solve real problems in a simple and intuitive way."}],T=[{title:"Languages & Frameworks",items:["MySQL","Java","Spring","HTML5","CSS","JavaScript","TypeScript","React","Node"]},{title:"Design Tools",items:["Figma","Photoshop","Illustrator"]},{title:"Necessary Tools",items:["Git/Github","Scrum","Jira","English","Spanish"]},{title:"Soft Skills",items:["Problem-solving","Adaptability","Teamwork & collaboration","Communication skills","Time management","Critical thinking"]}],z=[{title:"SkoolyClips",subtitle:"desktop app - video review workflow - 2026",tools:["TypeScript","Node.js","Electron","React","Tailwind","Vite","ffmpeg"],linkUrl:"https://skoolyclips.com",description:"Desktop app for coaches to review student recordings, assign each clip to the correct student, and generate a single shareable link plus a ready-to-send WhatsApp message. It turns long recording sessions into a fast and organized delivery workflow."},{title:"Klin",subtitle:"AI WhatsApp assistant for clinics - 2026",tools:["TypeScript","Node.js","Next.js","React","Tailwind","Fastify","Prisma","PostgreSQL","Redis","OpenAI"],linkUrl:"https://klin-ai.vercel.app/",description:"Klin is an AI assistant that answers patients on WhatsApp 24/7 with the clinic's own policies and schedule, confirms appointments, handles deposits, and keeps the calendar organized. It automates the routine administrative conversations so the practice can focus on patient care."},{title:"La Gaviota",subtitle:"landing-page - restaurant - 2025",tools:["Html","Css","Tailwind","JavaScript","React"],linkUrl:"https://lagaviotamdp.com",description:"Responsive restaurant landing page with menu and information about La Gaviota. Built with React for optimal mobile experience and high performance."},{title:"BunchPay",subtitle:"wallet online - 2025",tools:["PostgreSQL","Java","Spring","Html","Css","Tailwind","JavaScript","Angular","Figma"],linkUrl:"",description:"Digital wallet platform enabling secure payments, fund transfers, real-time balance tracking and other functions. Built with Angular, Java, Spring for seamless financial management."},{title:"SQuiero",subtitle:"catalog - bags brand - 2025",tools:["TypeScript","Next.js","React","Tailwind","Prisma","PostgreSQL"],linkUrl:"https://squiero.vercel.app/",description:"Online catalog for a bags brand showcasing their full product collection. Built with React and Tailwind for a clean, modern shopping experience."},{title:"WoodCliff",subtitle:"catalog - carpentry products - 2025",tools:["TypeScript","Next.js","React","Tailwind","Prisma","PostgreSQL"],linkUrl:"https://woodcliff-eight.vercel.app/",description:"Product catalog for a carpentry brand displaying their handcrafted furniture and woodwork pieces. Built with React for a smooth browsing experience."}];return Y.jsxs("div",{className:`\r
         md:full max-w-7xl mx-auto my-10\r
         flex flex-col justify-between items-start\r
